@@ -10,6 +10,7 @@ public class HotelTest {
     Hotel hotel2;
     Bedroom room1;
     Bedroom room2;
+    Bedroom room3;
     ConferenceRoom conferenceRoom1;
     ConferenceRoom conferenceRoom2;
     Guest guest1;
@@ -23,6 +24,7 @@ public class HotelTest {
         hotel2 = new Hotel("CodeClan Towers2");
         room1 = new Bedroom(101, 2, "Double", 10.00);
         room2 = new Bedroom(102, 1, "Single", 5.00);
+        room3 = new Bedroom(103, 1, "Single", 5.00);
         conferenceRoom1 = new ConferenceRoom(10, "The Funky Sweet Suite");
         conferenceRoom2 = new ConferenceRoom(2, "De Svunky Zveet Seewite");
         guest1 = new Guest("Steven", 'M');
@@ -30,6 +32,8 @@ public class HotelTest {
         guest3 = new Guest("Stefan", 'F');
         hotel2.addBedroom(room1);
         hotel2.addBedroom(room2);
+        hotel2.addBedroom(room3);
+
     }
 
     @Test
@@ -132,6 +136,12 @@ public class HotelTest {
     public void canCreateBooking(){
         hotel2.createBooking(room2, 3);
         assertEquals(1, hotel2.getBookings().size());
+    }
+
+    @Test
+    public void canCheckIfEmpty(){
+        hotel2.checkInGuestToBedroom(guest1, room3);
+        assertEquals(2, hotel2.getEmptyBedrooms.size());
     }
 
 
