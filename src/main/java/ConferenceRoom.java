@@ -15,4 +15,8 @@ public class ConferenceRoom {
     public int getCapacity(){
         return capacity;
     }
+
+    public String getName() {
+        return name;
+    }
 }
