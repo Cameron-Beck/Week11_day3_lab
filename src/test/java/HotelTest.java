@@ -110,4 +110,10 @@ public class HotelTest {
         assertEquals(0, room2.getGuests().size());
         assertEquals(0, conferenceRoom2.getGuests().size());
     }
+
+    @Test
+    public void canCheckIfBedroom(){
+        hotel.addBedroom(room2);
+        assertTrue(hotel.checkIfBedroom(room2));
+    }
 }

@@ -35,15 +35,16 @@ public class Hotel {
     }
 
     public void checkInGuestToBedroom(Guest guest, Bedroom room) {
-        if ( room.checkCapacity() > 0) {
+        if ( checkIfBedroom(room) && room.checkCapacity() > 0) {
             room.addGuest(guest);
         }
 
+
     }
 
-    public void checkInGuestToConferenceRoom(Guest guest, ConferenceRoom conferenceRoom) {
-        if ( conferenceRoom.checkCapacity() > 0) {
-            conferenceRoom.addGuest(guest);
+    public void checkInGuestToConferenceRoom(Guest guest, ConferenceRoom room) {
+        if ( checkIfConferenceRoom(room) && room.checkCapacity() > 0) {
+            room.addGuest(guest);
         }
     }
 
