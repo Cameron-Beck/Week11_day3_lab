@@ -40,4 +40,10 @@ public class Hotel {
         }
 
     }
+
+    public void checkInGuestToConferenceRoom(Guest guest, ConferenceRoom conferenceRoom) {
+        if ( conferenceRoom.checkCapacity() > 0) {
+            conferenceRoom.addGuest(guest);
+        }
+    }
 }
