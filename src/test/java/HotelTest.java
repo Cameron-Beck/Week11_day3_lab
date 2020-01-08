@@ -102,4 +102,12 @@ public class HotelTest {
         assertEquals(1, conferenceRoom2.getGuests().size());
         assertTrue(conferenceRoom2.getGuests().contains(guest2));
     }
+
+    @Test
+    public void checkInFailsIfRoomDoesNotExsistInHotel(){
+        hotel.checkInGuestToBedroom(guest1, room2);
+        hotel.checkInGuestToConferenceRoom(guest2, conferenceRoom2);
+        assertEquals(0, room2.getGuests().size());
+        assertEquals(0, conferenceRoom2.getGuests().size());
+    }
 }
