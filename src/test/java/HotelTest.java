@@ -144,6 +144,13 @@ public class HotelTest {
         assertEquals(2, hotel2.getEmptyBedrooms().size());
     }
 
+    @Test
+    public void canOnlyCheckInGuestsIfRoomIsEmpty(){
+        hotel2.checkInGuestToBedroom(guest1, room1);
+        hotel2.checkInGuestToBedroom(guest2, room1);
+        assertEquals(1, room1.getGuests().size());
+    }
+
 
 
 }

@@ -322,7 +322,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.HotelTest.canCheckIfEmpty">
+  <component name="RunManager" selected="JUnit.HotelTest.canOnlyCheckInGuestsIfRoomIsEmpty">
     <configuration name="BedroomTest.canGetRates" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Day3Lab" />
       <option name="PACKAGE_NAME" value="" />
@@ -362,11 +362,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HotelTest.checkInFailsIfRoomDoesNotExistInHotel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HotelTest.canOnlyCheckInGuestsIfRoomIsEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Day3Lab" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="HotelTest" />
-      <option name="METHOD_NAME" value="checkInFailsIfRoomDoesNotExistInHotel" />
+      <option name="METHOD_NAME" value="canOnlyCheckInGuestsIfRoomIsEmpty" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -374,11 +374,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HotelTest.canOnlyCheckInGuestsIfRoomIsEmpty" />
         <item itemvalue="JUnit.HotelTest.canCheckIfEmpty" />
         <item itemvalue="JUnit.BookingTest" />
         <item itemvalue="JUnit.HotelTest.canCreateBooking" />
         <item itemvalue="JUnit.BedroomTest.canGetRates" />
-        <item itemvalue="JUnit.HotelTest.checkInFailsIfRoomDoesNotExistInHotel" />
       </list>
     </recent_temporary>
   </component>
