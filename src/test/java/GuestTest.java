@@ -19,4 +19,9 @@ public class GuestTest {
         assertEquals("Steven", guest.getName());
     }
 
+    @Test
+    public void hasGender(){
+        assertEquals('M', guest.getGender());
+    }
+
 }
