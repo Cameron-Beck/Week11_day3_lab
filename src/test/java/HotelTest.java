@@ -53,5 +53,6 @@ public class HotelTest {
     public void canCheckInGuestToBedroom(){
         hotel.addBedroom(room1);
         hotel.checkInGuestToBedroom(guest1, room1);
+        assertEquals(1, room1.getGuests().size());
     }
 }
