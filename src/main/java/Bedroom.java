@@ -37,4 +37,8 @@ public class Bedroom {
     public int checkCapacity() {
         return capacity - guests.size();
     }
+
+    public void removeGuest(Guest guest) {
+        guests.remove(guest);
+    }
 }
