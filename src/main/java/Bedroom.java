@@ -31,6 +31,6 @@ public class Bedroom {
     }
 
     public void addGuest(Guest guest) {
-
+        guests.add(guest);
     }
 }

@@ -14,7 +14,7 @@ public class BedroomTest {
     @Before
     public void before(){
         room = new Bedroom(101,2, "Double");
-        guest = new Guest("Steven", 'M')
+        guest = new Guest("Steven", 'M');
     }
 
     @Test
@@ -41,6 +41,12 @@ public class BedroomTest {
     public void canAddGuests(){
         room.addGuest(guest);
         assertEquals(1, room.getGuests().size());
+    }
+
+    @Test
+    public void canCheckCapacityAfterAddingGuest(){
+        room.addGuest(guest);
+        assertEquals(1, room.checkCapacity());
     }
 }
 
