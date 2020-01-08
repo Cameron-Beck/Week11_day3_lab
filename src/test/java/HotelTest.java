@@ -16,4 +16,9 @@ public class HotelTest {
     public void hasName(){
         assertEquals("CodeClan Towers", hotel.getName());
     }
+
+    @Test
+    public void hasBedrooms(){
+        assertEquals(0, hotel.getBedrooms().size());
+    }
 }
