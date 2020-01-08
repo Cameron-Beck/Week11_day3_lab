@@ -7,4 +7,8 @@ public class Booking {
         this.bedroom = bedroom;
         this.numberOfNights = numberOfNights;
     }
+
+    public Bedroom getBedroom() {
+        return bedroom;
+    }
 }

@@ -65,5 +65,7 @@ public class BedroomTest {
     public void canGetRates(){
         assertEquals(10.00, room.getRates(), 0.01);
     }
+
+
 }
 

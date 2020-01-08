@@ -2,6 +2,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static junit.framework.TestCase.assertEquals;
+import static junit.framework.TestCase.assertTrue;
 
 public class BookingTest {
 
@@ -19,6 +20,11 @@ public class BookingTest {
     @Test
     public void hasBedroom(){
         assertEquals(room1, booking1.getBedroom());
+    }
+
+    @Test
+    public void hasNights(){
+        assertEquals(3, booking1.getNumberOfNights());
     }
 
 
