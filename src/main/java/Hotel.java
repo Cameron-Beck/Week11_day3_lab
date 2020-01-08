@@ -75,4 +75,14 @@ public class Hotel {
     public ArrayList<Booking> getBookings(){
         return new ArrayList<Booking>(bookings);
     }
+
+    public ArrayList<Bedroom> getEmptyBedrooms() {
+        ArrayList<Bedroom> emptyRooms = new ArrayList<Bedroom>();
+        for ( Bedroom room : bedrooms){
+            if(room.checkCapacity() == room.getCapacity()){
+                emptyRooms.add(room);
+            }
+        }
+        return emptyRooms;
+    }
 }
