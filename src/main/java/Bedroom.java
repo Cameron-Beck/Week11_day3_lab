@@ -44,4 +44,8 @@ public class Bedroom {
     public void removeGuest(Guest guest) {
         guests.remove(guest);
     }
+
+    public double getRates() {
+        return nightlyRate;
+    }
 }

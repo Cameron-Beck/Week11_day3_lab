@@ -63,7 +63,7 @@ public class BedroomTest {
 
     @Test
     public void canGetRates(){
-        assertEquals(10.00, room.getRates());
+        assertEquals(10.00, room.getRates(), 0.01);
     }
 }
 
