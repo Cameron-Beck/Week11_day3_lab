@@ -29,4 +29,8 @@ public class Bedroom {
     public String getType() {
         return type;
     }
+
+    public void addGuest(Guest guest) {
+
+    }
 }

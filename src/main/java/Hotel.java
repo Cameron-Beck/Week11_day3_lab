@@ -33,4 +33,8 @@ public class Hotel {
     public void addConferenceRoom(ConferenceRoom conferenceRoom){
         conferenceRooms.add(conferenceRoom);
     }
+
+    public void checkInGuestToBedroom(Guest guest, Bedroom room) {
+        room.addGuest(guest);
+    }
 }
