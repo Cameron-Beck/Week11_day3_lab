@@ -66,9 +66,10 @@ public class Hotel {
         return conferenceRooms.contains(room);
     }
 
-    public void createBooking(Bedroom room, int numberOfNights) {
+    public Booking createBooking(Bedroom room, int numberOfNights) {
         Booking newBooking = new Booking(room, numberOfNights);
         bookings.add(newBooking);
+        return newBooking;
     }
 
     public ArrayList<Booking> getBookings(){
