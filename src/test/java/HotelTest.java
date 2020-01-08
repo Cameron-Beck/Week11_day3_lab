@@ -18,8 +18,8 @@ public class HotelTest {
     @Before
     public void before(){
         hotel = new Hotel("CodeClan Towers");
-        room1 = new Bedroom(101, 2, "Double");
-        room2 = new Bedroom(102, 1, "Single");
+        room1 = new Bedroom(101, 2, "Double", 10.00);
+        room2 = new Bedroom(102, 1, "Single", 5.00);
         conferenceRoom1 = new ConferenceRoom(10, "The Funky Sweet Suite");
         conferenceRoom2 = new ConferenceRoom(2, "De Svunky Zveet Seewite");
         guest1 = new Guest("Steven", 'M');

@@ -15,7 +15,7 @@ public class BedroomTest {
 
     @Before
     public void before(){
-        room = new Bedroom(101,2, "Double");
+        room = new Bedroom(101,2, "Double", 10.00);
         guest1 = new Guest("Steven", 'M');
         guest2 = new Guest("Stephen", 'M');
     }
@@ -59,6 +59,11 @@ public class BedroomTest {
         room.removeGuest(guest1);
         assertEquals(1, room.getGuests().size());
         assertTrue(room.getGuests().contains(guest2));
+    }
+
+    @Test
+    public void canGetRates(){
+        assertEquals(10.00, room.getRates());
     }
 }
 
