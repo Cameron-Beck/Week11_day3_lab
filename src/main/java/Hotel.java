@@ -37,7 +37,9 @@ public class Hotel {
     }
 
     public void checkInGuestToBedroom(Guest guest, Bedroom room) {
-        if ( checkIfBedroom(room) && room.checkCapacity() > 0) {
+        ArrayList<Bedroom> emptyRooms = getEmptyBedrooms();
+
+        if ( emptyRooms.contains(room) && checkIfBedroom(room) && room.checkCapacity() > 0) {
             room.addGuest(guest);
         }
 
