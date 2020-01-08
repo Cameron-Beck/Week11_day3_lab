@@ -269,17 +269,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.HotelTest.canAddBedroom">
-    <configuration name="ConferenceRoomTest.hasGuests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Day3Lab" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ConferenceRoomTest" />
-      <option name="METHOD_NAME" value="hasGuests" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.HotelTest.canAddConferenceRoom">
     <configuration name="HotelTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Day3Lab" />
       <option name="PACKAGE_NAME" value="" />
@@ -294,6 +284,16 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="HotelTest" />
       <option name="METHOD_NAME" value="canAddBedroom" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HotelTest.canAddConferenceRoom" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Day3Lab" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HotelTest" />
+      <option name="METHOD_NAME" value="canAddConferenceRoom" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -321,11 +321,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HotelTest.canAddConferenceRoom" />
         <item itemvalue="JUnit.HotelTest.canAddBedroom" />
         <item itemvalue="JUnit.HotelTest.hasConferenceRooms" />
         <item itemvalue="JUnit.HotelTest.hasBedrooms" />
         <item itemvalue="JUnit.HotelTest" />
-        <item itemvalue="JUnit.ConferenceRoomTest.hasGuests" />
       </list>
     </recent_temporary>
   </component>
