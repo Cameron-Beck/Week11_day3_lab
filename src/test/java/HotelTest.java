@@ -55,4 +55,11 @@ public class HotelTest {
         hotel.checkInGuestToBedroom(guest1, room1);
         assertEquals(1, room1.getGuests().size());
     }
+
+    @Test
+    public void canCheckGuestInToConferenceRoom(){
+        hotel.addConferenceRoom(conferenceRoom1);
+        hotel.checkInGuestToConferenceRoom(guest1, conferenceRoom1);
+        assertEquals(1, conferenceRoom1.getGuests().size());
+    }
 }
