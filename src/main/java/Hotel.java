@@ -50,4 +50,8 @@ public class Hotel {
     public void checkOutGuestFromBedroom(Guest guest, Bedroom room) {
         room.removeGuest(guest);
     }
+
+    public void checkOutGuestFromConferenceRoom(Guest guest, ConferenceRoom room) {
+        room.removeGuest(guest);
+    }
 }
