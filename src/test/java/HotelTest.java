@@ -21,4 +21,9 @@ public class HotelTest {
     public void hasBedrooms(){
         assertEquals(0, hotel.getBedrooms().size());
     }
+
+    @Test
+    public void hasConferenceRooms(){
+        assertEquals(0, hotel.getConferenceRooms().size());
+    }
 }

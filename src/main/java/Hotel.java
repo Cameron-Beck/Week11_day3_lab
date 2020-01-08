@@ -21,4 +21,8 @@ public class Hotel {
     public ArrayList<Bedroom> getBedrooms() {
         return new ArrayList<Bedroom>(bedrooms);
     }
+
+    public ArrayList<ConferenceRoom> getConferenceRooms() {
+        return new ArrayList<ConferenceRoom>(conferenceRooms);
+    }
 }
