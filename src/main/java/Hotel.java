@@ -68,8 +68,8 @@ public class Hotel {
         return conferenceRooms.contains(room);
     }
 
-    public Booking createBooking(Bedroom room, int numberOfNights) {
-        Booking newBooking = new Booking(room, numberOfNights);
+    public Booking createBooking(Bedroom room, int numberOfNights, ArrayList<Guest> guests) {
+        Booking newBooking = new Booking(room, numberOfNights, guests);
         bookings.add(newBooking);
         return newBooking;
     }
@@ -87,4 +87,19 @@ public class Hotel {
         }
         return emptyRooms;
     }
+
+    public void checkInGuestViaBooking(Booking booking) {
+            ArrayList<Bedroom> emptyRooms = getEmptyBedrooms();
+            ArrayList<Guest> guests = booking.getGuests();
+            Bedroom room = booking.getBedroom();
+
+            if ( emptyRooms.contains(room) && checkIfBedroom(room) && room.getCapacity() > guests.size()) {
+                for(Guest guest : guests) {
+                    room.addGuest(guest);
+                }
+            }
+
+
+        }
+
 }

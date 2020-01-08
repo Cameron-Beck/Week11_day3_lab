@@ -1,6 +1,8 @@
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.ArrayList;
+
 import static junit.framework.TestCase.assertEquals;
 import static junit.framework.TestCase.assertTrue;
 
@@ -16,6 +18,8 @@ public class HotelTest {
     Guest guest1;
     Guest guest2;
     Guest guest3;
+    ArrayList<Guest> guests;
+    Booking booking;
 
 
     @Before
@@ -30,9 +34,13 @@ public class HotelTest {
         guest1 = new Guest("Steven", 'M');
         guest2 = new Guest("Stephen", 'M');
         guest3 = new Guest("Stefan", 'F');
+        guests = new ArrayList<Guest>();
+        guests.add(guest1);
+        guests.add(guest2);
         hotel2.addBedroom(room1);
         hotel2.addBedroom(room2);
         hotel2.addBedroom(room3);
+        booking = new Booking(room1, 3, guests);
 
     }
 
@@ -134,7 +142,7 @@ public class HotelTest {
 
     @Test
     public void canCreateBooking(){
-        hotel2.createBooking(room2, 3);
+        hotel2.createBooking(room2, 3, guests);
         assertEquals(1, hotel2.getBookings().size());
     }
 
@@ -150,6 +158,13 @@ public class HotelTest {
         hotel2.checkInGuestToBedroom(guest2, room1);
         assertEquals(1, room1.getGuests().size());
     }
+
+    @Test
+    public void checkInGuestsViaBooking(){
+        hotel2.checkInGuestViaBooking(booking);
+        assertEquals(2, room1.getGuests().size());
+    }
+
 
 
 
