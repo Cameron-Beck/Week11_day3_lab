@@ -1,4 +1,6 @@
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.BitSet;
 
 public class ConferenceRoom {
 
@@ -18,5 +20,9 @@ public class ConferenceRoom {
 
     public String getName() {
         return name;
+    }
+
+    public ArrayList<Guest> getGuests() {
+        return new ArrayList<Guest>(guests);
     }
 }
