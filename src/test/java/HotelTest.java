@@ -10,6 +10,7 @@ public class HotelTest {
     Bedroom room2;
     ConferenceRoom conferenceRoom1;
     ConferenceRoom conferenceRoom2;
+    Guest guest1;
 
     @Before
     public void before(){
@@ -18,6 +19,7 @@ public class HotelTest {
         room2 = new Bedroom(102, 1, "Single");
         conferenceRoom1 = new ConferenceRoom(10, "The Funky Sweet Suite");
         conferenceRoom2 = new ConferenceRoom(16, "De Svunky Zveet Seewite");
+        guest1 = new Guest("Steven", 'M');
     }
 
     @Test
@@ -45,5 +47,11 @@ public class HotelTest {
     public void canAddConferenceRoom(){
         hotel.addConferenceRoom(conferenceRoom1);
         assertEquals(1, hotel.getConferenceRooms().size());
+    }
+
+    @Test
+    public void canCheckInGuestToBedroom(){
+        hotel.addBedroom(room1);
+        hotel.checkInGuestToBedroom(guest1, room1);
     }
 }
