@@ -2,6 +2,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static junit.framework.TestCase.assertEquals;
+import static junit.framework.TestCase.assertTrue;
 
 public class HotelTest {
 
@@ -90,5 +91,15 @@ public class HotelTest {
         hotel.checkInGuestToBedroom(guest2, room2);
         hotel.checkOutGuestFromBedroom(guest2, room2);
         assertEquals(0, room2.getGuests().size());
+    }
+
+    @Test
+    public void canCheckGuestOutOfConferenceRoom(){
+        hotel.addConferenceRoom(conferenceRoom2);
+        hotel.checkInGuestToConferenceRoom(guest1, conferenceRoom2);
+        hotel.checkInGuestToConferenceRoom(guest2, conferenceRoom2);
+        hotel.checkOutGuestFromConferenceRoom(guest1, conferenceRoom2);
+        assertEquals(1, conferenceRoom2.getGuests().size());
+        assertTrue(conferenceRoom2.getGuests().contains(guest2));
     }
 }
