@@ -5,12 +5,14 @@ public class Hotel {
 
     private ArrayList<Bedroom> bedrooms;
     private ArrayList<ConferenceRoom> conferenceRooms;
+    private ArrayList<Booking> bookings;
     private String name;
 
     public Hotel(String name){
         this.name = name;
         this.bedrooms = new ArrayList<Bedroom>();
         this.conferenceRooms = new ArrayList<ConferenceRoom>();
+        this.bookings = new ArrayList<Booking>();
     }
 
     public String getName() {
@@ -62,5 +64,14 @@ public class Hotel {
 
     public boolean checkIfConferenceRoom(ConferenceRoom room) {
         return conferenceRooms.contains(room);
+    }
+
+    public void createBooking(Bedroom room, int numberOfNights) {
+        Booking newBooking = new Booking(room, numberOfNights);
+        bookings.add(newBooking);
+    }
+
+    public ArrayList<Booking> getBookings(){
+        return new ArrayList<Booking>(bookings);
     }
 }

@@ -7,6 +7,7 @@ import static junit.framework.TestCase.assertTrue;
 public class HotelTest {
 
     Hotel hotel;
+    Hotel hotel2;
     Bedroom room1;
     Bedroom room2;
     ConferenceRoom conferenceRoom1;
@@ -15,9 +16,11 @@ public class HotelTest {
     Guest guest2;
     Guest guest3;
 
+
     @Before
     public void before(){
         hotel = new Hotel("CodeClan Towers");
+        hotel2 = new Hotel("CodeClan Towers2");
         room1 = new Bedroom(101, 2, "Double", 10.00);
         room2 = new Bedroom(102, 1, "Single", 5.00);
         conferenceRoom1 = new ConferenceRoom(10, "The Funky Sweet Suite");
@@ -25,6 +28,8 @@ public class HotelTest {
         guest1 = new Guest("Steven", 'M');
         guest2 = new Guest("Stephen", 'M');
         guest3 = new Guest("Stefan", 'F');
+        hotel2.addBedroom(room1);
+        hotel2.addBedroom(room2);
     }
 
     @Test
@@ -121,5 +126,11 @@ public class HotelTest {
     public void canCheckIfConferenceRoom(){
         hotel.addConferenceRoom(conferenceRoom2);
         assertTrue(hotel.checkIfConferenceRoom(conferenceRoom2));
+    }
+
+    @Test
+    public void canCreateBooking(){
+        hotel2.createBooking(room2, 3);
+        assertEquals(1, hotel2.getBookings().size());
     }
 }
