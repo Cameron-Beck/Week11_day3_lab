@@ -34,4 +34,10 @@ public class ConferenceRoomTest {
         conferenceRoom.addGuest(guest1);
         assertEquals(1, conferenceRoom.getGuests().size());
     }
+
+    @Test
+    public void canCheckCapacity(){
+        conferenceRoom.addGuest(guest1);
+        assertEquals(9, conferenceRoom.checkCapacity());
+    }
 }

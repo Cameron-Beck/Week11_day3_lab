@@ -22,10 +22,15 @@ public class ConferenceRoom {
         return name;
     }
 
+    public int checkCapacity(){
+        return capacity - guests.size();
+    }
+
     public ArrayList<Guest> getGuests() {
         return new ArrayList<Guest>(guests);
     }
 
-    public void addGuest(Guest guest1) {
+    public void addGuest(Guest guest) {
+        guests.add(guest);
     }
 }
