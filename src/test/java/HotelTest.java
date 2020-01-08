@@ -23,7 +23,7 @@ public class HotelTest {
         conferenceRoom2 = new ConferenceRoom(2, "De Svunky Zveet Seewite");
         guest1 = new Guest("Steven", 'M');
         guest2 = new Guest("Stephen", 'M');
-        guest3 = new Guest("Stefan", 'F')
+        guest3 = new Guest("Stefan", 'F');
     }
 
     @Test
