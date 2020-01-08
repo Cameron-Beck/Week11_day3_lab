@@ -116,4 +116,10 @@ public class HotelTest {
         hotel.addBedroom(room2);
         assertTrue(hotel.checkIfBedroom(room2));
     }
+
+    @Test
+    public void canCheckIfConferenceRoom(){
+        hotel.addConferenceRoom(conferenceRoom2);
+        assertTrue(hotel.checkIfConferenceRoom(conferenceRoom2));
+    }
 }
