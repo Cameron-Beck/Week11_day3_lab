@@ -274,7 +274,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BedroomTest.canCheckCapacityAfterAddingGuest">
+  <component name="RunManager" selected="JUnit.HotelTest.canCheckInGuestToBedroom">
     <configuration name="BedroomTest.canAddGuests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Day3Lab" />
       <option name="PACKAGE_NAME" value="" />
@@ -315,11 +315,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HotelTest.hasConferenceRooms" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HotelTest.canCheckInGuestToBedroom" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Day3Lab" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="HotelTest" />
-      <option name="METHOD_NAME" value="hasConferenceRooms" />
+      <option name="METHOD_NAME" value="canCheckInGuestToBedroom" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -327,11 +327,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HotelTest.canCheckInGuestToBedroom" />
         <item itemvalue="JUnit.BedroomTest.canCheckCapacityAfterAddingGuest" />
         <item itemvalue="JUnit.BedroomTest.canAddGuests" />
         <item itemvalue="JUnit.HotelTest.canAddConferenceRoom" />
         <item itemvalue="JUnit.HotelTest.canAddBedroom" />
-        <item itemvalue="JUnit.HotelTest.hasConferenceRooms" />
       </list>
     </recent_temporary>
   </component>

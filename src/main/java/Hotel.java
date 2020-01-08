@@ -35,6 +35,9 @@ public class Hotel {
     }
 
     public void checkInGuestToBedroom(Guest guest, Bedroom room) {
-        room.addGuest(guest);
+        if ( room.checkCapacity() > 0) {
+            room.addGuest(guest);
+        }
+
     }
 }
