@@ -134,11 +134,7 @@ public class HotelTest {
         assertEquals(1, hotel2.getBookings().size());
     }
 
-    @Test
-    public void canGetTotalBill(){
-        hotel2.createBooking(room2, 3);
-        assertEquals(15.00, hotel2.calculateTotal(booking), 0.01);
-    }
+
 
 
 }
