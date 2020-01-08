@@ -33,4 +33,8 @@ public class ConferenceRoom {
     public void addGuest(Guest guest) {
         guests.add(guest);
     }
+
+    public void removeGuest(Guest guest) {
+        guests.remove(guest);
+    }
 }
