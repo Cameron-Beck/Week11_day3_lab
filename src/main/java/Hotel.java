@@ -46,4 +46,8 @@ public class Hotel {
             conferenceRoom.addGuest(guest);
         }
     }
+
+    public void checkOutGuestFromBedroom(Guest guest, Bedroom room) {
+        room.removeGuest(guest);
+    }
 }
