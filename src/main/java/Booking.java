@@ -11,4 +11,8 @@ public class Booking {
     public Bedroom getBedroom() {
         return bedroom;
     }
+
+    public int getNumberOfNights() {
+        return numberOfNights;
+    }
 }
