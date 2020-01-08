@@ -25,4 +25,8 @@ public class Hotel {
     public ArrayList<ConferenceRoom> getConferenceRooms() {
         return new ArrayList<ConferenceRoom>(conferenceRooms);
     }
+
+    public void addBedroom(Bedroom bedroom) {
+        bedrooms.add(bedroom);
+    }
 }
