@@ -104,7 +104,7 @@ public class HotelTest {
     }
 
     @Test
-    public void checkInFailsIfRoomDoesNotExsistInHotel(){
+    public void checkInFailsIfRoomDoesNotExistInHotel(){
         hotel.checkInGuestToBedroom(guest1, room2);
         hotel.checkInGuestToConferenceRoom(guest2, conferenceRoom2);
         assertEquals(0, room2.getGuests().size());

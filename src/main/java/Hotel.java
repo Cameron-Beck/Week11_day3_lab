@@ -55,4 +55,12 @@ public class Hotel {
     public void checkOutGuestFromConferenceRoom(Guest guest, ConferenceRoom room) {
         room.removeGuest(guest);
     }
+
+    public boolean checkIfBedroom(Bedroom room) {
+        return bedrooms.contains(room);
+    }
+
+    public boolean checkIfConferenceRoom(ConferenceRoom room) {
+        return conferenceRooms.contains(room);
+    }
 }
