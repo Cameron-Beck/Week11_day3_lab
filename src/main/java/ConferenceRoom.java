@@ -25,4 +25,7 @@ public class ConferenceRoom {
     public ArrayList<Guest> getGuests() {
         return new ArrayList<Guest>(guests);
     }
+
+    public void addGuest(Guest guest1) {
+    }
 }
